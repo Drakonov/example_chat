@@ -76,8 +76,6 @@ class ChatScreen extends StatelessWidget {
           itemCount: state.listMessages.length,
           itemBuilder: (BuildContext context, int index) {
             Message message = state.listMessages[index];
-            //if sender id is 0 then buildAnotherMessage
-            //if sender id is 1 then buildYourMessage
             if (message.senderId == 0) {
               return Column(
                 children: [
